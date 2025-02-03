@@ -142,10 +142,6 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
-autoload -U compinit && compinit
-
-bindkey '^ ' autosuggest-accept
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/wrkcat/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wrkcat/google-cloud-sdk/path.zsh.inc'; fi
 
