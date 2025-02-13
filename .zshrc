@@ -86,14 +86,16 @@ HISTFILE=~/.zsh_history
 #plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 plugins=(
   git 
-  zsh-syntax-highlighting 
   zsh-autosuggestions 
   zsh-completions 
   macos
   systemd
   colored-man-pages
   safe-paste
+  zsh-syntax-highlighting
 )
+
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -139,7 +141,9 @@ export BAT_THEME="Coldark-Dark"
 eval "$(starship init zsh)"
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+#source <(fzf --zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -170,4 +174,3 @@ autoload -Uz compinit && compinit
 #zstyle ':completion:*' use-compctl false
 #zstyle ':completion:*' verbose true
 
-bindkey '^ ' autosuggest-accept

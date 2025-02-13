@@ -4,4 +4,29 @@
 # git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # vim +PluginInstall +qall
 
+# Linux
+# TODO Git Credential Manager
+# https://github.com/git-ecosystem/git-credential-manager
 
+# TODO Starship Linux
+# curl -sS https://starship.rs/install.sh | sh
+# 
+# sudo apt install bat -y
+# mkdir -p ~/.local/bin
+# ln -s /usr/bin/batcat ~/.local/bin/bat
+#
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#   git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+#
+# FZF
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install  
+#
+# Zoxide
+# curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+# 
+# YAZI
+# sudo apt install -y ffmpeg 7zip jq poppler-utils fd-find ripgrep imagemagick
+#
+# sudo apt install -y pgp lsd
